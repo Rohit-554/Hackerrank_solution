@@ -1,2 +1,4 @@
 # Hackerrank_solution
-Put Your HackerRank Files Here
+Just Name The Question Title 
+eg. Find Digits (Hackerrank) and make Pr
+Thankyou
