@@ -1,6 +1,10 @@
 import math
 def fact(n):
-    return(math.factorial(n))
+    try: 
+        return(math.factorial(n))
+    except ValueError as e :
+        print("Please Enter Positive Numbers Only :( ")
+
 
 nmbr = int(input("")) 
 f = fact(nmbr) 
