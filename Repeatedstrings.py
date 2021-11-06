@@ -4,13 +4,12 @@ def fun(s,n):
     for i in range(n):
         for j in s:
             new+=j
-            if len(new)==n:
-                t=1
-                break
-        if t==1:
-            break   
-    count=0         
-    for i in new:
+    # print(new)    
+    if len(new)==n: 
+      t=1
+    else:
+      count=0         
+      for i in new:
         if i=='a':
             count+=1        
     
