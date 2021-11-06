@@ -17,6 +17,7 @@ def fun(s, n):
         for i in length:
             if i == 'a':
                 count += 1
+        count = count * n
     else:
         count = len(s) * n
 
