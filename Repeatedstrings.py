@@ -1,21 +1,27 @@
 # Algorithm 2
 import time
 
-def fun(s,n):
-    count=0   
-    for i in s:
-        if i=='a':
-            count+=1      
-    count = count * n
-    print(count)    
 
-string=input("")   
-num=int(input(""))
-fun(string,num) 
+def fun(s, n):
+    length = ""
+    for j in range(n):
+        length = length + s
+
+    count = 0
+    length = length[0:10]
+    print(length)
+
+    for i in length:
+        if i == 'a':
+            count += 1
+    print(count)
+
+
+string = input("")
+num = int(input(""))
+fun(string, num)
 start_time = time.time()
 print("--- %s seconds ---" % (time.time() - start_time))
-
-
 
 
 # Algorithm 1
@@ -27,20 +33,20 @@ print("--- %s seconds ---" % (time.time() - start_time))
 #     for i in range(n):
 #         for j in s:
 #             new+=j
-#     # print(new)    
-#     if len(new)==n: 
+#     # print(new)
+#     if len(new)==n:
 #       t=1
 #     else:
-#       count=0         
+#       count=0
 #       for i in new:
 #         if i=='a':
-#             count+=1        
-    
-#     print(count)       
-    
-# string=input("")   
+#             count+=1
+
+#     print(count)
+
+# string=input("")
 # num=int(input(""))
 
-# fun(string,num) 
+# fun(string,num)
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
