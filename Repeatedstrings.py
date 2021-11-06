@@ -3,17 +3,23 @@ import time
 
 
 def fun(s, n):
-    length = ""
-    for j in range(n):
-        length = length + s
-
     count = 0
-    length = length[0:10]
-    print(length)
+    if s.count('a') != len(s):
+        length = ""
+        for j in range(n):
+            length = length + s
+            if len(length) > 10:
+                length = length[0:10]
+                break
 
-    for i in length:
-        if i == 'a':
-            count += 1
+        print(length)
+
+        for i in length:
+            if i == 'a':
+                count += 1
+    else:
+        count = len(s) * n
+
     print(count)
 
 
