@@ -14,12 +14,12 @@ def fun(s, n):
                 getter = int(check) * len(s)
                 final = s.count('a')
                 final = final * int(check)
-
                 check = n - getter
+                count = final
                 if check != 0:
                     s = s[0:check]
                     final = final + s.count('a')
-                    print(final)
+                    # print(final)
                     count = final
             else:
                 count = n
