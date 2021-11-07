@@ -5,7 +5,7 @@ import time
 def fun(s, n):
     count = 0
     if len(s) > n:
-        s = s[0:10]
+        s = s[0:n]
         count = s.count('a')
     else:
         if(len(s) != s.count('a')):
