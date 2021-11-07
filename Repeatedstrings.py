@@ -3,34 +3,37 @@ import time
 
 
 def fun(s, n):
-    count = 0
-    if len(s) > n:
-        s = s[0:n]
-        count = s.count('a')
-    else:
-        if(len(s) != s.count('a')):
-            check = n / len(s)
-            # print(check)
-            # print(len(s))
-            getter = int(check) * len(s)
-            # print(s)
-            s = s * int(check)
-            #  print(s, n)
-            # print(getter)
-            check = n - getter
+    if(s.count('a') != 0):
+        count = 0
+        if len(s) > n:
+            s = s[0:n]
             count = s.count('a')
-            # print(check)
-            if check != 0:
-                a = s[0:check]
-                count = a.count('a')
-                count = count + s.count('a')
-            # print(check)r
-            #     s = s * 2
-            #     print(s)
-            # print(count)
-            # s = s[0:n]
         else:
-            count = n
+            if(len(s) != s.count('a')):
+                check = n / len(s)
+                # print(check)
+                # print(len(s))
+                getter = int(check) * len(s)
+                # print(s)
+                s = s * int(check)
+                #  print(s, n)
+                # print(getter)
+                check = n - getter
+                count = s.count('a')
+                # print(check)
+                if check != 0:
+                    a = s[0:check]
+                    count = a.count('a')
+                    count = count + s.count('a')
+                # print(check)r
+                #     s = s * 2
+                #     print(s)
+                # print(count)
+                # s = s[0:n]
+            else:
+                count = n
+    else:
+        count = 0
 
     print(count)
 
