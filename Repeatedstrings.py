@@ -11,25 +11,16 @@ def fun(s, n):
         else:
             if(len(s) != s.count('a')):
                 check = n / len(s)
-                # print(check)
-                # print(len(s))
                 getter = int(check) * len(s)
-                # print(s)
-                s = s * int(check)
-                #  print(s, n)
-                # print(getter)
+                final = s.count('a')
+                final = final * int(check)
+
                 check = n - getter
-                count = s.count('a')
-                # print(check)
                 if check != 0:
-                    a = s[0:check]
-                    count = a.count('a')
-                    count = count + s.count('a')
-                # print(check)r
-                #     s = s * 2
-                #     print(s)
-                # print(count)
-                # s = s[0:n]
+                    s = s[0:check]
+                    final = final + s.count('a')
+                    print(final)
+                    count = final
             else:
                 count = n
     else:
@@ -43,6 +34,42 @@ num = int(input(""))
 fun(string, num)
 start_time = time.time()
 print("--- %s seconds ---" % (time.time() - start_time))
+
+
+# \ algo 3
+#    if(s.count('a') != 0):
+#         count = 0
+#         if len(s) > n:
+#             s = s[0:n]
+#             count = s.count('a')
+#         else:
+#             if(len(s) != s.count('a')):
+#                 check = n / len(s)
+#                 # print(check)
+#                 # print(len(s))
+#                 getter = int(check) * len(s)
+#                 # print(s)
+#                 s = s * int(check)
+#                 #  print(s, n)
+#                 # print(getter)
+#                 check = n - getter
+#                 count = s.count('a')
+#                 # print(check)
+#                 if check != 0:
+#                     a = s[0:check]
+#                     count = a.count('a')
+#                     count = count + s.count('a')
+#                 # print(check)r
+#                 #     s = s * 2
+#                 #     print(s)
+#                 # print(count)
+#                 # s = s[0:n]
+#             else:
+#                 count = n
+#     else:
+#         count = 0
+
+#     print(count)
 
 
 # def fun(s, n):
